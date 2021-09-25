@@ -12,7 +12,7 @@ router.post("/new", async (req, res) => {
     await review.save();
     res.send();
   } catch (e) {
-    res.send({ message: "Review were not submitted", e });
+    res.send({ message: "Review were not submitted", e});
   }
 });
 

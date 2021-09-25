@@ -3,6 +3,8 @@ const app = express();
 const dotenv = require("dotenv");
 const reviews = require("./routes/reviews");
 const mongoose = require("mongoose");
+const cors = require('cors')
+app.use(cors({origin:'http://localhost:3000',credentials:true}))
 
 dotenv.config({ path: "./config/dev.env" });
 
